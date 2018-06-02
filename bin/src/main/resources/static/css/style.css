@@ -1,0 +1,83 @@
+@charset "ISO-8859-1";
+
+
+body {
+    font-family: 'Amaranth';font-size: 14px;
+}
+.about-section {
+    padding: 4em 0;
+}
+.site-title  {
+    padding: 2em 0;
+}
+.site-title h3 {
+    font-size: 3.5em;
+    color: #14B9D5;
+    font-family: 'Marvel-Regular';
+    font-weight: 700;
+}
+.site-title p {
+    font-size: 1.1em;
+    color: #333333;
+    line-height: 1.8em;
+    margin-top: 0.5em;
+}
+
+.about-inner-column h4 {
+    font-size: 2.5em;
+    color: #FFD001;
+    font-family: 'Marvel-Regular';
+}
+.about-inner-column p {
+    font-size: 1.1em;
+    color: #333333;
+    line-height: 1.8em;
+    margin: 1em 0 0;
+}
+
+.about-inner-column ul li a {
+    color: #333333;
+    font-size: 1.1em;
+    padding-left: 2em;
+}
+.about-right img {
+    width: 100%;
+}
+
+.image-about{
+	width: 200px;
+	height: 200px;
+}
+
+.feature-box-section {
+    padding-top:60px;
+    padding-bottom:60px;
+    background:#d9d9d9;
+}
+.feature-col-box {
+    margin-bottom: 50px;
+}
+.mb-52 {
+    margin-bottom: 52px;
+}
+.feature-box-icon {
+    background: #dd3333 none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 70px;
+    line-height: 87px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 70px;
+    float: left;
+}
+.feature-box-icon i {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.feature-list-text {
+    margin-left: 85px;
+}
+.features-left-img img {width:100%;}

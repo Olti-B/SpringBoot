@@ -42,7 +42,7 @@
 	<div class="row">
 	    <div class="col-lg-7 col-md-7 col-xs-12">
                             <div class="features-left-img">
-                                <img src="images/mainbus.jpg" width="100%" height="20%"/>
+                                <img src="https://devitems.com/preview/appmom/img/bg-img/bg-8.png" alt="">
                             </div>
                         </div>
 	    <div class="col-lg-5 col-md-5 col-xs-12">
@@ -51,7 +51,7 @@
                                         <i class="fa fa-facebook-square fa-3x social"></i>
                                     </div>
                                     <div class="feature-list-text">
-                                        <h3>Fast Trasport</h3>
+                                        <h3>High Resolution</h3>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum ma Pellentesque mollis eros vel. 
                                         </p>
@@ -62,7 +62,7 @@
                                         <i class="fa fa-google-plus fa-3x social"></i>
                                     </div>
                                     <div class="feature-list-text">
-                                        <h3>Text</h3>
+                                        <h3>Unlimited Features</h3>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum ma Pellentesque mollis eros vel. 
                                         </p>
@@ -73,7 +73,7 @@
                                         <i class="fa fa-linux fa-3x social"></i>
                                     </div>
                                     <div class="feature-list-text">
-                                        <h3>Text</h3>
+                                        <h3>Modern Design</h3>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum ma Pellentesque mollis eros vel. 
                                         </p>
