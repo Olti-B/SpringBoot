@@ -4,6 +4,8 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link href="https://code.jquery.com/jquery-3.3.1.min.js">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
 	<!-- 
 	<spring:url value="/css/style.css" var="springCss" />
 	<link href="${springCss}" rel="stylesheet" />

@@ -8,7 +8,8 @@
 		Spring boot will handle the resource mapping automcatically -->
 	<link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+	<link href="https://code.jquery.com/jquery-3.3.1.min.js">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
 	<!-- 
 	<spring:url value="/css/style.css" var="springCss" />
 	<link href="${springCss}" rel="stylesheet" />
@@ -40,18 +41,21 @@
 <div class="container">
     <div class="row">
         <div class="col-md-offset-5 col-md-3">
-            <div class="form-login">
-            <h4>Welcome back.</h4>
-            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
-            <br/>
-            <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
-            <br/>
-            <div class="wrapper">
-            <span class="group-btn">     
-                <a href="#" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>
-            </span>
-            </div>
-            </div>
+            <form class="form-login" method="post" action="/login">
+	           <h4>Welcome back.</h4>
+	           
+	           ${errorLogin}
+	           
+		           <input type="text" id="email" name="email" class="form-control input-sm chat-input" placeholder="email" />
+		           <br/>
+		           <input type="password" id="userpassword"  name="userpassword" class="form-control input-sm chat-input" placeholder="password" />
+		           <br/>
+		           <div class="wrapper">
+		           <span class="group-btn">     
+		               <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Login</button>
+		           </span>
+	           </div>
+            </form>
         
         </div>
     </div>

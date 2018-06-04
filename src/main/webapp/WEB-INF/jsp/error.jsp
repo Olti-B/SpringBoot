@@ -4,12 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="https://code.jquery.com/jquery-3.3.1.min.js">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
 <title>Insert title here</title>
 </head>
 <body>
-
-Ecc te vdeksha 
+Kemi nje error ropt
 </body>
 </html>
