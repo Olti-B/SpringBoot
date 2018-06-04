@@ -48,7 +48,7 @@
 	               	</div>
 	            </div> 
 				<div class="main-login main-center">
-					<form class="form-horizontal" method="post" action="#">
+					<form class="form-horizontal" method="post" action="/register">
 						
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Your Name</label>
@@ -99,10 +99,22 @@
 								</div>
 							</div>
 						</div>
+						
+						<div class="form-group">
+						<p>
+						${errorRegister}
+						</p>
+						</div>
 
 						<div class="form-group ">
-							<button type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+							<button type="submit" value="submit" class="btn btn-primary btn-lg btn-block login-button">Register</button>
 						</div>
+						
+						<div class="form-group ">
+						  <p>${successUserAdded}</p>
+						</div>
+						
+						
 						<div class="login-register">
 				            <a href="/login">Login</a>
 				         </div>

@@ -1,7 +1,7 @@
 package com.olti.dto;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 public class UserDto implements Serializable {
 
 	/**
@@ -27,15 +27,16 @@ public class UserDto implements Serializable {
 	private String username;
 	@Column(nullable = false)
 	private String password;
-	@Column(nullable = false)
+	@Column(nullable = false, unique = true)
 	private String email;
 	@Column(nullable = false)
-	private Date date;
+	private Timestamp date;
 
 	public UserDto(String username, String password, String email) {
 		this.username = username;
 		this.password = password;
 		this.email = email;
+
 	}
 
 	public UserDto() {
@@ -58,7 +59,7 @@ public class UserDto implements Serializable {
 		return email;
 	}
 
-	public Date getDate() {
+	public Timestamp getDate() {
 		return date;
 	}
 
