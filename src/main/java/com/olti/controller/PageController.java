@@ -49,36 +49,41 @@ public class PageController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public @ResponseBody void verifyLogin(@RequestParam String email, @RequestParam String userpassword, Model model,
+	public String verifyLogin(@RequestParam String email, @RequestParam String userpassword, Model model,
 			HttpServletResponse resp) throws IOException {
 
 		user = userService.findUserByEmailAndPassword(email, userpassword);
 
 		if (user != null) {
-			resp.sendRedirect("/users_auth/booking_page");
+			return "/users_auth/booking_page";
 		} else {
 			model.addAttribute("errorLogin", "Could not find user");
-			resp.sendRedirect("/login");
 		}
+		
+		return "/login";
 
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public @ResponseBody void saveNewUser(@RequestParam String name, @RequestParam String email,
+	public String saveNewUser(@RequestParam String name, @RequestParam String email,
 			@RequestParam String username, @RequestParam String password, @RequestParam String confirm, Model model,
 			HttpServletResponse resp) throws IOException {
 
+	if(!password.isEmpty())
 		if (password.equals(confirm)) {
 			if (userService.findByEmail(email) != null) {
 				userService.saveUser(new UserDto(username, password, email));
 				model.addAttribute("successUserAdded", "Succesfull user added");
-				resp.sendRedirect("/register");
+				return "/login";
 			} else {
 				model.addAttribute("successUserAdded", "User Exist");
 			}
 		} else {
-			model.addAttribute("errorRegister", "Please neter the same password");
-		}
+			model.addAttribute("errorRegister", "Please enter the same password");
+	}else {
+		model.addAttribute("errorRegister", "Please empty Field");
+	}
+		return "/register";
 	}
 
 }
