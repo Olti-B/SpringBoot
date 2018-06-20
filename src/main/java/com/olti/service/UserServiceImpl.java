@@ -13,8 +13,8 @@ public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 
 	@Override
-	public UserDto findUserByEmailAndPassword(String email, String password) {
-		return userRepository.findByEmailAndPassword(email, password);
+	public UserDto findUsersByEmailAndPassword(String email, String password) {
+		return userRepository.findUsersByEmailAndPassword(email, password);
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public UserDto findByEmail(String email) {
-		return userRepository.findByEmail(email);
+		return userRepository.findUsersByEmail(email);
 	}
 
 }

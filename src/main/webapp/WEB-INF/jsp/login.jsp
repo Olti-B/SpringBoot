@@ -37,32 +37,41 @@
 	</nav>
 </div>
 	
+	<div class="container">
+			<p>${errorLogin}</p>
+			
+			<div class="main-login main-center">
+				<form class="form-horizontal" method="POST" action="/login">
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-offset-5 col-md-3">
-            <form class="form-login" method="post" action="/login">
-	           <h4>Welcome back.</h4>
-	           
-	           ${errorLogin}
-	           
-		           <input type="text" id="email" name="email" class="form-control input-sm chat-input" placeholder="email" />
-		           <br/>
-		           <input type="password" id="userpassword"  name="userpassword" class="form-control input-sm chat-input" placeholder="password" />
-		           <br/>
-		           <div class="wrapper">
-		           <span class="group-btn">     
-		               <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Login</button>
-		           </span>
-	           </div>
-            </form>
-        
-        </div>
-    </div>
-</div>
+					<div class="form-group">
+						<label for="email" class="cols-sm-2 control-label">Your
+							Email</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><iclass="fa fa-envelope fa" aria-hidden="true"></i></span>
+									 <input type="text" class="form-control" name="email" id="email" placeholder="Enter your Email" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="password" class="cols-sm-2 control-label">Password</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="fa fa-lock fa-lg" aria-hidden="true"></i></span> 
+									<input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group ">
+						<button type="submit" class="btn btn-primary btn-lg btn-block login-button" value="submit" >Login</button>
+					</div>
+				</form>
+			</div>
+		</div>
 	
-	<script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
